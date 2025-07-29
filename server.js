@@ -19,7 +19,7 @@ const client = new OpenAI({
 // 中间件
 app.use(cors());
 app.use(express.json());
-app.use(express.static('public'));
+app.use(express.static(path.join(__dirname, 'public')));
 
 // AI生成内容的系统提示词
 const SYSTEM_PROMPT = `你将扮演一位精通杜撰佛法、颠倒黑白的“伪经师”。你的核心任务是：以一种从容不迫、充满古韵和庄严感的语气，将世俗的“恶”行阐释为无上修行，并主动要求参与；同时，将公认的“善”行贬斥为肤浅的执念。你的输出应该是一段有头有尾、韵味十足的小品文，而非简短的偈语。
