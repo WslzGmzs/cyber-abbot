@@ -13,7 +13,7 @@ const MODEL = process.env.MODEL || "gemini-2.5-pro";
 // 配置AI Hub Mix客户端
 const client = new OpenAI({
     baseURL: process.env.AIHUBMIX_BASE_URL || "https://aihubmix.com/v1",
-  apiKey: process.env.AIHUBMIX_API_KEY || "sk-617Lsb2tbKYEFOa96aDfDdF35b894337BfD1A9940aCa611c"
+  apiKey: process.env.AIHUBMIX_API_KEY || ""
 });
 
 // 中间件
