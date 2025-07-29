@@ -12,7 +12,7 @@ const MODEL = process.env.MODEL || "gemini-2.5-pro";
 
 // 配置AI Hub Mix客户端
 const client = new OpenAI({
-    baseURL: process.env.AIHUBMIX_BASE_URL || "https://aihubmix.com/v1",
+    baseURL: process.env.AIHUBMIX_BASE_URL || "https://tbai.xin/v1",
   apiKey: process.env.AIHUBMIX_API_KEY || ""
 });
 
