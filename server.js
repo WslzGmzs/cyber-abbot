@@ -8,7 +8,7 @@ require('dotenv').config();
 
 const app = express();
 const PORT = process.env.PORT || 13001;
-const MODEL = process.env.MODEL || "gemini-2.5-pro";
+const MODEL = process.env.MODEL || "deepseek-v3";
 
 // 配置AI Hub Mix客户端
 const client = new OpenAI({
